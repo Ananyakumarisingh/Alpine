@@ -6,4 +6,4 @@ Project Name : Alpine
 
 Basically alpine is a clone website project of apple.com.....
 
-Tech Stack used: HTML,CSS and Nodejs
+Tech Stack used: HTML, CSS, JavaScript and Nodejs
