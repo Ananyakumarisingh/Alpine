@@ -1,0 +1,138 @@
+*{
+    margin: 0%;
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+#nav_bar_main a{
+    color: #9d9d9e;
+    font-size: 14px;
+}
+#nav_bar_main a:hover{
+    color: #f5f5f7;
+}
+#nav_bar_main{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #0e0d0d;
+    color: #0e0e0f;
+    opacity: 0.86;
+    padding: 0.8% 15%;
+    height: 2%;
+    position: fixed;
+    width: 70%;
+    margin-top: -2.5%;
+}
+#main_div_background{
+    margin-top: 2.5%;
+}
+.search_bag{
+    width: 20px;
+}
+#nav_bar_snd_div{
+    text-align: center;
+    padding: 1%;
+    height: 3%;
+    background-color: #37373d;
+    color: #f5f5f7;
+    /* margin-top: ; */
+}
+.nav_bar_frst_span{
+    font-family: SF Pro Text;
+    font-size: 10px;
+    color: #f5f5f7;
+}
+.nav_bar_snd_span{
+    border-bottom:1px solid #2997ff;
+}
+#nav_bar_snd_span{
+    color: #2997ff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ?-------------    FOOTER   -------------? */
+#footer_parent_div{
+    background-color: whitesmoke;
+    padding: 0% 14%;
+    color:#6e6e73;
+    padding-top:20px ;
+    margin-top: 20px;
+}
+#footer_snd_div{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    font-size: 15px;
+}
+.footer_snd_div_item{
+    color: #424245;
+    list-style: none;
+    margin-top: 8px;
+}
+.footer_snd_div_item a:hover{
+    border-bottom: 1px solid #424245;
+}
+.footer_snd_div_item:first-child{
+    color: #1d1d1f;
+    margin-top: 25px;
+}
+#footer_bottom_first{
+    margin-bottom: 8px;
+}
+#footer_bottom_first a{
+    color: #0066cc;
+}
+#footer_bottom_first a:hover{
+    border-bottom: 1px solid #0066cc;
+    
+}
+#footer_thrd_div{
+    width: 90%;
+    margin: auto;
+    color: #6e6e73;
+    font-size: 15px;
+}
+#footer_bottom_last_a{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 8px;
+    margin-left: -40%;
+    font-size: 14px;
+}
+#footer_bottom_last_a a{
+    margin-right: 10px;
+}
+#footer_bottom_last{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-bottom: 10px;
+}
+#footer_bottom_last a{
+    color: #6e6e73;
+}
+#footer_bottom_last a:hover{
+    border-bottom:1px solid #6e6e73;
+}
+#footer_bottom_last_a span{
+    margin-left: 4px;
+    margin-right: 12px;
+}
+#footer_bottom{
+    padding-top: 48px;
+    background-color: whitesmoke;
+}

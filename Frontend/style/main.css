@@ -1,0 +1,107 @@
+*{
+    margin: 0%;
+}
+#main_page_first_parent_div{
+    background-color: #000000; 
+    text-align: center;
+    height: 420px;
+    display:flex;
+    justify-content: center;
+}
+#main_page_first_child_div h1{
+    width: 650px;
+    font-size: 50px;
+    margin-top: 13%;
+    color: #f5f5f7;
+    margin-bottom: 7%;
+}
+#main_page_first_child_anker{
+    color: #f5f5f7;
+    border-style:solid;
+    border-width: 3px;
+    border-top-color: #2374e5;
+    border-left-color: #ffb032;
+    border-right-color: #60056e;
+    border-bottom-color: #ff3aaa;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 14px 16px;
+    border-radius: 30px;
+    background-color: initial;
+}
+#main_page_first_child_div a:hover{
+    background-color: #f5f5f7;
+    border: 0px;
+    color: initial;
+}
+
+
+/** ----------------2nd Div--------------- */
+.mainpage_snd_parent_div{
+    background-color: #000000; 
+    text-align: center;
+    align-items: center;
+    height: 670px;
+    display:flex;
+    justify-content: center;
+}
+.mainpage_snd_parent_div_heigth{
+    height: 570px;
+}
+.mainpage_snd_div_writing h1{
+    font-size: 50px;
+    color: #f5f5f7;
+    margin-bottom: 4px;
+}
+.mainpage_white_p{
+    color: #f5f5f7;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.mainpage_grey_p{
+    color: gray;
+    font-size: 20px;
+}
+.mainpage_snd_div_img img{
+    position: relative;
+}
+.mainpage_snd_div_writing_anker {
+    width: 30%;
+    margin-left: 33.2%;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+.mainpage_snd_div_writing_anker a{
+    margin-top: 20px;
+    color: #2997ff;
+    font-size: 21px;
+    display: inline;
+}
+.mainpage_snd_div_writing_anker a:hover{
+    border-bottom: 2px solid #2997ff;
+}
+.button_p_tag{
+    font-size: 18px;
+    border: 1px solid gray;
+    width: 160px;
+    padding: 5px;
+    margin: auto;
+    border-radius: 30px;
+}
+.div_braker{
+    width: 100vw;
+    height: 1px;
+    margin-top: 10px;
+}
+.mainpage_snd_parent_div_heigt{
+    height: 565px;
+}
+#mainpage_six_parent_div{
+    display: grid;
+    grid-template-columns: repeat(2,3fr);
+    gap: 5px;
+}
+#mainpage_six_parent_div img{
+    width: 98%;
+}
