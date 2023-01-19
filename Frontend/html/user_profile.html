@@ -10,7 +10,7 @@
     />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="../style/nav_&_footer.css" />
-    <link rel="stylesheet" href="../style/.css">
+    <link rel="stylesheet" href="../style/user_profile.css">
     <link rel="icon" href="../images/apple-2.png" />
     <title>Your Alpine Profile - Alpine</title>
   </head>
@@ -35,15 +35,74 @@
     <div id="sign_up_page_nav">
         <div id="apple_id">Alpine ID</div>
         <div id="sign_up_page_nav_scnd">
-            <input type="submit" name="Sign out" id="">
+            <input type="submit" value="Sign out" id="submit">
         </div>
     </div>
     <hr>
     <!-- !------------------------ NAVBAR ---------------------------- -->
 
 
+    <div id="profile_parent_div">
+        <div id="profile_frst_child_div">
+            <span class="material-symbols-outlined profile_logo">account_circle</span>
+            <h3 id="user_name">User name</h3>
+            <p id="email" class="margin_p_bott grey">email</p>
+            <span class="blue"><b>Sign-In and Security</b></span>
+            <p class="margin_p">Personal information</p>
+            <p class="margin_p">Payment Methods</p>
+            <p class="margin_p">Family Sharing</p>
+            <p class="margin_p">Devices</p>
+            <p class="margin_p">Privacy</p>
+        </div>
+        <div id="profile_scnd_child_div">
+            <h1>Sign-In and Security</h1>
+            <p class="grey grey_p_height">Manage setting related to signing in to your account, account security and how to recover you data when you are having trouble in signing in.</p>
+            <div id="profile_prnt_card">
+                <div>
+                    <div class="profile_child_card_p">
+                        <p class="big"><b>Alpine ID</b></p>
+                        <p class="grey small" id="email">email</p>
+                    </div>
+                    <div class="profile_child_card_icon">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                </div>
+                <div>
+                    <div class="profile_child_card_p">
+                        <p class="big"><b>Password</b></p>
+                        <p class="grey small">Last updated <span id="date">date</span></p>
+                    </div>
+                    <div class="profile_child_card_icon">
+                        <span class="material-symbols-outlined">security</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="profile_child_card_p">
+                        <p class="big"><b>Account Security</b></p>
+                        <p class="grey small">Two-factor authentication</p>
+                        <p class="grey small">1 trusted phone number</p>
+                    </div>
+                    <div class="profile_child_card_icon">
+                        <span class="material-symbols-outlined">password</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="profile_child_card_p">
+                        <p class="big"><b>App-specific password</b></p>
+                        <p class="grey small">View details</p>
+                    </div>
+                    <div class="profile_child_card_icon">
+                        <span class="material-symbols-outlined">key</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <div id="supportPIN">
+        <span class="material-symbols-outlined grey">support_agent</span>
+        <p class="grey">Support PIN</p>
+    </div>
 
 
 
