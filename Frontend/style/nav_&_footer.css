@@ -1,4 +1,9 @@
+@font-face {
+    font-family: sf pro;
+    src: url(../SF-Pro.ttf);
+}
 *{
+    font-family: sf pro;
     margin: 0%;
 }
 a{

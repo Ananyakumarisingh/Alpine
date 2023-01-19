@@ -1,4 +1,9 @@
+@font-face {
+    font-family: sf pro;
+    src: url(../SF-Pro.ttf);
+}
 *{
+    font-family: sf pro;
     margin: 0%;
 }
 #main_page_first_parent_div{
@@ -95,13 +100,21 @@
     margin-top: 10px;
 }
 .mainpage_snd_parent_div_heigt{
-    height: 565px;
+    height: 620px;
+}
+.mainpage_snd_div_writing_margin_top{
+    margin-top:30px;
 }
 #mainpage_six_parent_div{
     display: grid;
     grid-template-columns: repeat(2,3fr);
     gap: 5px;
+    margin-left: 10px;
+    margin-top: 8px;
 }
 #mainpage_six_parent_div img{
     width: 98%;
+}
+#last_single_img{
+    margin-top: 12px;
 }
