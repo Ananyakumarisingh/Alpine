@@ -89,8 +89,8 @@
 .button_p_tag{
     font-size: 18px;
     border: 1px solid gray;
-    width: 160px;
-    padding: 5px;
+    width: 190px;
+    padding: 8px;
     margin: auto;
     border-radius: 30px;
 }
@@ -103,7 +103,7 @@
     height: 620px;
 }
 .mainpage_snd_div_writing_margin_top{
-    margin-top:30px;
+    margin-top: 45px;
 }
 #mainpage_six_parent_div{
     display: grid;
@@ -116,5 +116,5 @@
     width: 98%;
 }
 #last_single_img{
-    margin-top: 12px;
+    margin-top: 2px;
 }
