@@ -97,4 +97,5 @@ input[type="submit"]:hover{
     display: flex;
     flex-direction: row;
     margin-bottom: 10px;
+    cursor: pointer;
 }
