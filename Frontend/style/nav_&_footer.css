@@ -1,4 +1,9 @@
+@font-face {
+    font-family: sf pro;
+    src: url(../SF-Pro.ttf);
+}
 *{
+    font-family: sf pro;
     margin: 0%;
 }
 a{
@@ -39,16 +44,17 @@ a{
     color: #f5f5f7;
 }
 .nav_bar_frst_span{
-    font-size: 10px;
     color: #f5f5f7;
 }
-.nav_bar_snd_span{
-    border-bottom: 1px solid #2997ff;
+.nav_bar_frst_span:hover{
+    color: #2997ff;
 }
 #nav_bar_snd_span{
     color: #2997ff;
 }
-
+#nav_bar_snd_span:hover{
+    border-bottom: 2px solid #2997ff;
+}
 
 
 
@@ -69,8 +75,8 @@ a{
     background-color: whitesmoke;
     padding: 0% 14%;
     color:#6e6e73;
-    padding-top:20px ;
-    margin-top: 20px;
+    padding-top:40px ;
+    margin-top: 80px;
 }
 #footer_snd_div{
     display: grid;
