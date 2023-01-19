@@ -2,7 +2,7 @@
 
 Original Website : apple.com
 
-Project Name : Alpine
+Project Name : alpine.com
 
 Basically alpine is a clone website project of apple.com.....
 
