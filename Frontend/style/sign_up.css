@@ -61,7 +61,7 @@ form{
     width: 32%;
     margin: auto;
 }
-input,#COUNTRY_REGION{
+input,#country{
     height: 56px;
     width: 213px;
     margin-top: 8px;
@@ -74,7 +74,7 @@ input,#COUNTRY_REGION{
     display: flex;
     justify-content: space-evenly;
 }
-#COUNTRY_REGION{
+#country{
     width: 100%;
 }
 label{
