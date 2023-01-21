@@ -31,9 +31,6 @@ const userSchema = mongoose.Schema({
   number: {
     type: String,
     require: true
-  },
-  role:{
-    type: String
   }
 });
 

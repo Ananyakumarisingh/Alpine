@@ -50,10 +50,11 @@
       <p>You already have an Alpine ID <a class="find_here" href="./login.html">Find it here ></a></p>
     </div>
     <form action="">
-      <div id="name"><input type="text" required id="firstname" placeholder="first name"><input type="text" id="lastname" required placeholder="last name"></div>
+      <div><input type="text" required id="firstname" placeholder="first name">
+        <input type="text" id="lastname" required placeholder="last name"></div>
       <br>
       <label for="">COUNTRY/REGION</label><br>
-      <select name="" id="COUNTRY_REGION">
+      <select name="" id="country">
         <option value="India">India</option>
         <option value="Indonesia">Indonesia</option>
         <option value="Iraq">Iraq</option>
@@ -71,7 +72,7 @@
       <br>
       <div id="dob_div">
         <label for="">Date of Birth</label>
-        <input type="date">
+        <input id="dob" type="date">
       </div>
       <hr>
       <input type="email" required id="email" placeholder="name@example.com">
@@ -143,4 +144,5 @@
     </div>
     
 </body>
+<script src="../scripts/signup.js"></script>
 </html>

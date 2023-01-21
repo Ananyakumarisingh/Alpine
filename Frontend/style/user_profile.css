@@ -1,0 +1,102 @@
+@font-face {
+    font-family: sf pro;
+    src: url(../SF-Pro.ttf);
+}
+*{
+    font-family: sf pro;
+    margin: 0%;
+}
+#sign_up_page_nav{
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#apple_id{
+    margin: 12px 0px;
+    font-size: 22px;
+}
+input[type="submit"]{
+    color: #f5f5f7;
+    background-color: #0783f6;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 32px;
+    padding: 4px;
+    width: 72px;
+    height: 26px;
+}
+input[type="submit"]:hover{
+    background-color: #399cf9;
+}
+#profile_parent_div{
+    height: 450px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-top: 60px;
+}
+.profile_logo{
+    font-size: 100px;
+    color: rgb(206, 206, 206);
+    margin-bottom: 10px;
+}
+.grey{
+    color: gray;
+}
+.blue{
+    color: #2997ff;
+}
+.margin_p{
+    margin-top: 10px;
+}
+.margin_p_bott{
+    margin-bottom: 30px;
+}
+#profile_frst_child_div{
+    width: 60%;
+}
+#profile_scnd_child_div{
+    width: 130%;
+    margin-left: -40%;
+}
+.grey_p_height{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+#profile_prnt_card{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+#profile_prnt_card>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    display: flex;
+    background: linear-gradient(to right, #ffffff, #ffffff, #ebf1f5);
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 6px;
+    height: 80px;
+    cursor: pointer;
+}
+.big{
+    font-size: 18px;
+    margin-bottom: 6px;
+}
+.small{
+    font-size: 14px;
+}
+.profile_child_card_icon{
+    font-size: 20px;
+    color: #1589f6;
+}
+#supportPIN{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    cursor: pointer;
+}

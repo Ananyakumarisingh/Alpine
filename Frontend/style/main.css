@@ -6,6 +6,10 @@
     font-family: sf pro;
     margin: 0%;
 }
+#nav_bar_main{
+    width: 100%;
+    height: 5.5%;
+}
 #main_page_first_parent_div{
     background-color: #000000; 
     text-align: center;
@@ -41,7 +45,9 @@
 }
 
 
+
 /** ----------------2nd Div--------------- */
+
 .mainpage_snd_parent_div{
     background-color: #000000; 
     text-align: center;
@@ -51,7 +57,7 @@
     justify-content: center;
 }
 .mainpage_snd_parent_div_heigth{
-    height: 570px;
+    height: 613px;
 }
 .mainpage_snd_div_writing h1{
     font-size: 50px;
@@ -100,7 +106,7 @@
     margin-top: 10px;
 }
 .mainpage_snd_parent_div_heigt{
-    height: 620px;
+    height: 645px;
 }
 .mainpage_snd_div_writing_margin_top{
     margin-top: 45px;
@@ -117,4 +123,12 @@
 }
 #last_single_img{
     margin-top: 2px;
+}
+#carouselExampleInterval {
+    width: 1400px;
+    margin: auto;
+    margin-top: 50px;
+}
+#carouselExampleInterval img{
+    height: 650px;
 }
