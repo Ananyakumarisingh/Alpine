@@ -16,3 +16,40 @@
     font-size: 14.5px;
 }
 
+/* *MID NAVBAR */
+#navbar_child_fig{
+    width: 74%;
+    margin-left:11.5%;
+}
+#nabbar_mid_ul{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 30px;
+}
+.navbar_mid_li{
+    list-style-type: none;
+}
+.navbar_span_name{
+    font-size: 13px;
+    line-height: 16.0005px;
+    color: #1d1d1f;
+}
+.navbar_span_name{
+    color: #0066cc;
+}
+.navbar_span_new{
+    color: #bf4800;
+    line-height: 12px;
+    font-size: 11px;
+    display: block;
+}
+.figure_screenshot{
+    height: 55px;
+}
+
+/* 3rd nav */
+#nav_bar_snd_div{
+    font-size: 12px;
+    padding: 5px;
+}
