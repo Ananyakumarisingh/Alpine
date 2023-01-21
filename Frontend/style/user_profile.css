@@ -74,6 +74,7 @@ input[type="submit"]:hover{
 }
 #profile_prnt_card>div{
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;    display: flex;
+    background: linear-gradient(to right, #ffffff, #ffffff, #ebf1f5);
     justify-content: space-between;
     padding: 15px;
     border-radius: 6px;
