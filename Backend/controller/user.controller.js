@@ -15,7 +15,7 @@ exports.registerUser = async (req, res) => {
         if (err) {
           res.send(err);
         }
-        user = new UserModel({ email, password: hashPass,firstname, lastname, country, dob,number});
+        user = new UserModel({ email, password: hashPass, firstname, lastname, country, dob, number});
         await user.save();
         res.send("User registered");
       });

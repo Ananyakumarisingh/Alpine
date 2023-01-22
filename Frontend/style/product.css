@@ -145,8 +145,9 @@ li{
     color: #000000;
 }
 .buy_lrn_ul{
-    width: 27%;
+    width: 30%;
     margin: auto;
+    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     margin-bottom: 25px;
@@ -164,6 +165,7 @@ li{
     color: #0077ed;
     font-size: 22px;
     margin-bottom: 4px;
+    margin-top: 12px;
 }
 .buy_li:hover{
     background-color: #1580eb;
