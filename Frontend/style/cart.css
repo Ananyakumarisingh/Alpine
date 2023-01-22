@@ -1,0 +1,40 @@
+@font-face {
+    font-family: sf pro;
+    src: url(../SF-Pro.ttf);
+}
+*{
+    font-family: sf pro;
+    margin: 0%;
+}
+#nav_bar_main{
+    width: 100%;
+    height: 5.5%;
+}
+#nav_bar_snd_div,.nav_bar_frst_span{
+    background-color: whitesmoke;
+    color: rgb(96, 96, 96);
+    font-size: 14.5px;
+}
+.material-symbols-outlined{
+    font-size: 21px;
+}
+.needsomehelp p{
+    margin-left: 15%;
+}
+.needsomehelp span{
+    color: #2c7bb4;
+    cursor: pointer;
+}
+.needsomehelp span:hover{
+    border-bottom: 1px solid #2c7bb4;
+    margin-bottom: 0px;
+}
+#footer_parent_div{
+    margin-top: 0px;
+}
+.pay {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    padding: 30px;
+    width: 25%;
+    height: 400px;
+}

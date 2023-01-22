@@ -68,8 +68,10 @@ li{
     text-align: center;
     margin-bottom: -17px;
 }
+
 .product_section_child_div_first{
-    margin-top: 0%;    
+    margin-top: 0%; 
+    padding-top: 50px;   
 }
 .product_sec_new{
     color: #86868b;
@@ -83,6 +85,35 @@ li{
     display: block;
     font-size: 1.5em;
     font-weight: bold;
+}
+.buy_lrn_ul_top{
+    width: 30%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.buy_li_top{
+    height: 40px;
+    padding: 6px 14px 0px 14px;
+    background-color: #1580eb;
+    color: #f5f5f7;
+    border-radius: 15px;
+    font-size: 18px;
+}
+.learn_more_li_top{
+    color: #1580eb;
+    margin-top: 5px;
+    font-size: 20px;
+}
+
+.buy_li_top:hover{
+    background-color: #1580eb;
+    margin-bottom: 0px; 
+}
+.learn_more_li_top:hover{
+    border-bottom: 2.5px solid #1580eb;
 }
 .product_sec_head_{
     color: transparent;
@@ -118,23 +149,9 @@ li{
     color: rgb(59, 59, 59);
     border: 1px solid rgb(59, 59, 59);
 }
-.product_figure{
+.top_img_first_product,.mid_img_first_product,.last_img_first_product{
     width: 782px;
     height: 542px;
-    background-size: 782px 542px;
-    background-repeat: no-repeat;
-    position: relative;
-    left: 50%;
-    margin-left: -391px;
-}
-.figure_one{
-    background-image: url(../images/iphone_14_pro_hero__e4ivycyx40k2_large.jpg);
-}
-.figure_two{
-    background-image: url(../images/iphone_14_hero__ceub5xriecgi_large.jpg);
-}
-.figure_three{
-    background-image: url(../images/iphone_se_hero__gd586pazxqqa_medium.jpg);
 }
 .product_detail{
     font-size: 20px;
@@ -144,35 +161,7 @@ li{
 .white_back_product{
     color: #000000;
 }
-.buy_lrn_ul{
-    width: 30%;
-    margin: auto;
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 25px;
-    cursor: pointer;
-}
-.buy_li{
-    background-color: #0066cc;
-    border: 2px solid #0066cc;
-    color: #f5f5f7;
-    border-radius: 25px;
-    padding: 4px 12px;
-    font-size: 18px;
-}
-.learn_more_li{
-    color: #0077ed;
-    font-size: 22px;
-    margin-bottom: 4px;
-    margin-top: 12px;
-}
-.buy_li:hover{
-    background-color: #1580eb;
-}
-.learn_more_li:hover{
-    border-bottom: 2.5px solid #2997ff;
-}
+
 .only_for_the_thrd_product{
     width: 90%;
     display: flex;
