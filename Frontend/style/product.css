@@ -57,20 +57,17 @@ li{
 /* product */
 .product_section_prnt_div{
     width: 100%;
-    border: 1px solid blue;
 }
 .black{
     background-color: #000000;
 }
 .product_section_child_div{
     width: 60%;
-    border: 1px solid red;
     margin: auto;
     margin-top: 5%;
     text-align: center;
     margin-bottom: -17px;
 }
-
 .product_sec_new{
     color: #86868b;
     font-size: 17px;
@@ -102,6 +99,7 @@ li{
     background-image: linear-gradient(91deg,#2ca2b4,#5598de 24%,#7f87ff 45%,#f65aad 76%,#ec3d43);
 }
 .product_sec_head_blue{
+    margin-top: -12px;
     background-image: linear-gradient(90deg,#1e3791 0%,#2948b1 40%,#3153c6 55%,#385fda 60%);
 }
 .button_P_tag{
@@ -143,5 +141,77 @@ li{
 .white_back_product{
     color: #000000;
 }
-
-
+.buy_lrn_ul{
+    width: 27%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+.buy_li{
+    background-color: #0066cc;
+    border: 2px solid #0066cc;
+    color: #f5f5f7;
+    border-radius: 25px;
+    padding: 4px 12px;
+    font-size: 18px;
+}
+.learn_more_li{
+    color: #0077ed;
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+.buy_li:hover{
+    background-color: #1580eb;
+}
+.learn_more_li:hover{
+    border-bottom: 2.5px solid #2997ff;
+}
+.only_for_the_thrd_product{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+}
+.only_for_the_thrd_product ul{
+    width: 70%;
+}
+.main_mid_section img{
+    margin-left: 40px;
+}
+.thrd_main_section_child_prnt{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.thrd_main_section_parent{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.thrd_main_sec_sub_child img{
+    height: 480px;
+}
+.thrd_main_section{
+    margin-top: 5%;
+}
+.thrd_main_sec_buy_learn{
+    width: 80%;
+    margin: auto;
+    cursor: pointer;
+}
+.buy_li{
+    margin-top: 15px;
+    font-size: 13px;
+    padding: 4px 6px;
+    border-radius: 10px;
+    width: 60px;
+    margin-left: 40px;
+}
+.learn_more_li{
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: -40px;
+}
+.learn_more_li:hover{
+    border-bottom:0px;
+}
