@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:3500';
+const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
   let form = document.querySelector("form");
   form.addEventListener("submit", (e) => {
     e.preventDefault();

@@ -56,7 +56,9 @@ a{
 #nav_bar_snd_span:hover{
     border-bottom: 2px solid #2997ff;
 }
-
+.material-symbols-outlined{
+    font-size: 21px;
+}
 
 
 
