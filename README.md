@@ -1,17 +1,9 @@
-# big-square-6235
-
-Original Website : apple.com
-
-Project Name : alpine.com
-
-Basically alpine is a clone website project of apple.com.....
-
 # Alpine
-Time tracking software used by millions. TrackIt is a time tracker and timesheet app that lets you track work hours across projects.
+Alpine is a prermium e-commerce website which deals in electronic products.
 
 ## Deployment
 
-This project is deployed on netlify here - [alpine.com](https://jovial-biscuit-ca94fe.netlify.app/)
+This project is deployed on netlify here - [alpine.com](https://alpine-ebrand.netlify.app/html/login.html/)
 
 ---
 
@@ -26,10 +18,10 @@ This project is deployed on netlify here - [alpine.com](https://jovial-biscuit-c
 ### Pages & Features 👇
 
 - `Home Page`: Nav Bar, Mainpage, Advertisement carosel, Footer Section.
-- `Sign-Up`: User details are stored in MongoDB, also checks if the user already exist or not.
-- `Sign-In`: User authentication to check whether the user's phone number and password match with details existing in the database.
+- `Sign-Up`: User details are stored in MongoDB Atlas.
+- `Sign-In`: User authentication to check whether the user's email and password match with details existing in the database.
 - `Products Page`: Product and .
-- `Time Tracker`: Users can track their activities.
+- `User's Profile page`: Contains all the details of user only if the user has signed in.
 - `Dashboard`: Users can check their weekly and Monthly activities in a graphical manner.
 - `Reports`: This Page is used to show Graphical Representation of Data.
 
@@ -37,11 +29,18 @@ This project is deployed on netlify here - [alpine.com](https://jovial-biscuit-c
 
 ### How To Use ✅
 
-First, you have to have to go to the `Home Page`. There you have to click on the account to get a pop window where there is a sign-up using your Email Address.  There you can explore the home page or go to the Main page and By set the Time Tracker into their projects. Then click on start the Time user can see their activities in the calendar and Dashboard sections and save our Daily report on the Report page also users can Tag their activities.
+First, it will direct us to the sign-in page you can go to sign-up and after singing-in explore the `Home Page` or you can directly explore the `Home Page`. After signing-in you will be directed to the `User's profile page` it will contain all the details of the user and from there you can `Sign-out` too. You can explore the `Products page`.
 
 ---
 
-### Technology we used....🔧
+### Areas Under Progress ⚒️
+
+- `Cart Page`
+- `Payment Page`
+- `Responsiveness`
+
+
+### Technology we used 🔧
 
 - `HTML` 
 - `CSS` 
@@ -51,8 +50,36 @@ First, you have to have to go to the `Home Page`. There you have to click on the
 - `MongoDB` 
 
 ----
-- `Frontend link` :https://jovial-biscuit-ca94fe.netlify.app/
-- `Backend link`  :https://calm-colt-uniform.cyclic.app
+- `Frontend link` : https://alpine-ebrand.netlify.app/html/login.html
+- `Backend link`  : https://ruby-vivacious-hare.cyclic.app
+----
+
+### A little glimpse of the pages 🖼️
+----
+
+- Sign-up Page
+![Screenshot 2023-03-10 105053](https://user-images.githubusercontent.com/112763650/224230772-c67dc5b8-9c35-4693-9069-4599463cca1d.png)
+----
+
+- Sign-in Page
+![Screenshot 2023-03-10 105034](https://user-images.githubusercontent.com/112763650/224230866-4f89835a-32a6-4784-b010-b7b90f6a7054.png)
+----
+
+- User's Profile Page
+![Screenshot 2023-03-10 105155](https://user-images.githubusercontent.com/112763650/224230969-13503c5a-913c-4b20-9b23-7a3dfb87e903.png)
+----
+
+- Home Page
+![Screenshot 2023-03-10 105121](https://user-images.githubusercontent.com/112763650/224231048-663927b5-898c-42f3-8ba8-8f277131715b.png)
+----
+
+- Products Page
+![Screenshot 2023-03-10 110018](https://user-images.githubusercontent.com/112763650/224231759-37106ceb-22f9-43a8-ba8a-d808212ea79c.png)
+
+----
+
+- Cart Page
+![Screenshot 2023-03-10 105226](https://user-images.githubusercontent.com/112763650/224231168-224218aa-99aa-4bd0-aa85-ce99c3b583ea.png)
 ----
 
 Thanks you for Checking our Project
