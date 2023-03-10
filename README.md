@@ -43,9 +43,11 @@ First, it will direct us to the sign-in page you can go to sign-up and after sin
 - `HTML` 
 - `CSS` 
 - `JavaScript`
-- `Node JS`
-- `Express JS`
+- `NodeJS`
+- `ExpressJS`
 - `MongoDB` 
+- `JSONWEBTOKEN`
+- `Bcrypt`
 
 ----
 - `Frontend link` : https://alpine-ebrand.netlify.app/html/login.html
