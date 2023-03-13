@@ -4,25 +4,29 @@ require("dotenv").config();
 const bcrypt = require("bcrypt");
 const jwt_secret = process.env.JWT_SECRET;
 
+
+//! 400 -> Bad Request | 403 -> forbidden | 200 -> Success
 exports.registerUser = async (req, res) => {
-  const { email, password, firstname, lastname, country, dob, number} = req.body;
+ 
   try {
-    let user = UserModel.find({ email });
-    if (user.length) {
-      return res.status(403).json({msg: "User Already Exists"});
-    } else {
-      bcrypt.hash(password, 8, async (err, hashPass) => {
-        if (err) {
-          res.send(err);
-        }
-        user = new UserModel({ email, password: hashPass, firstname, lastname, country, dob, number});
-        await user.save();
-        return res.status(200).json({msg: "User Created Successfully"});
-      });
-    }
+    let user = await UserModel.find({ email: req.body.email });
+    if (user.length) 
+       return res.status(403).json({msg: "User Already Exists"});
+     
+    // Storing user details in db
+    bcrypt.hash(req.body.password, 8, async (err, hashPass) => {
+      if (err) {
+        res.status(500).json({msg: err.message});
+      }
+      req.body.password = hashPass;
+      user = new UserModel(req.body);
+      await user.save();
+      res.status(200).json({msg: "User Created Successfully"});
+    });
+    
   } catch (error) {
-    console.log(error);
-    res.send("Error in registration");
+    res.status(500).json({msg: error.message});
+    console.log(error)
   }
 };
 
@@ -32,9 +36,9 @@ exports.loginUser = async (req, res) => {
     const user = await UserModel.find({ email });
     if (user.length) {
       bcrypt.compare(password, user[0].password, async (err, result) => {
-        if (err) {
-          res.send(err);
-        }
+        if (err) 
+          return res.status(500).json({msg: err.message});
+        
         if (result) {
           var token = jwt.sign({ data: user[0].id }, jwt_secret, {
             expiresIn: "2 days",
@@ -43,14 +47,14 @@ exports.loginUser = async (req, res) => {
           const email = user[0].email;
           res.send({token, firstname, email});
         } else {
-          res.status(400).send("Invalid Credentials");
+          res.status(403).send({msg: "Invalid Credentials"});
         }
       });
     } else {
       res.status(400).send("Invalid Credentials");
     }
   } catch (error) {
-    res.status(500).send("Invalid Credentials");
-    console.log(error);
+    return res.status(500).json({msg: err.message});
+    // console.log(error);
   }
 };
