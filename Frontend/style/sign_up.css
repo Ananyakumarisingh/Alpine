@@ -13,6 +13,10 @@ p{
 }
 .find_here{    color: #0070c9;
 }
+#nav_bar_main{
+    height: auto;
+    width: 100%;
+}
 #sign_up_page_nav{
     width: 65%;
     margin: auto;
@@ -146,5 +150,4 @@ color:#0070c9 ;
 }
 #submit:hover{
     background-color:#177acb;
-    
 }
