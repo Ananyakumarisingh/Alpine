@@ -22,9 +22,12 @@ async function loginUser(data){
   if(res.ok){
     const data = await res.json();
     // console.log(data)
+    const createTime = new Date(data.createdAt).toLocaleString();
     localStorage.setItem('token', data.token);
     localStorage.setItem('name', data.firstname);
     localStorage.setItem('email', data.email);
+    localStorage.setItem('createdAt', JSON.stringify(createTime));
+    
     //! localStorage.setItem('name', data.firstname);
     window.location.href = './user_profile.html'
   } else{
