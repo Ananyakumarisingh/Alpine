@@ -1,4 +1,6 @@
-const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
+// const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
+const baseUrl = 'http://localhost:3500';
+
   let form = document.querySelector("form");
   form.addEventListener("submit", (e) => {
     e.preventDefault();
@@ -12,11 +14,11 @@ const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
     let number = form.number.value;
 
   
-    let data = { email,firstname,password,cpassword,number,country,lastname,dob };
+    let data = { email, firstname, password, cpassword, number, country, lastname, dob };
     if(password == cpassword){
       registerUser(data);
     }else {
-      alert('Invalid credentials');
+      alert('Confirm password does not match');
     }    
   });
   async function registerUser(data){

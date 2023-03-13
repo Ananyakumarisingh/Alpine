@@ -1,6 +1,6 @@
 const UserModel = require("../models/user.model");
 const jwt = require("jsonwebtoken");
-const dotenv = require("dotenv");
+require("dotenv").config();
 const bcrypt = require("bcrypt");
 const jwt_secret = process.env.JWT_SECRET;
 
@@ -9,7 +9,7 @@ exports.registerUser = async (req, res) => {
   try {
     let user = new UserModel({ email });
     if (user.length) {
-      res.status(400).send("Ops! User already exsist.");
+      return res.status(403).json({msg: "User Already Exists"});
     } else {
       bcrypt.hash(password, 8, async (err, hashPass) => {
         if (err) {
@@ -17,7 +17,7 @@ exports.registerUser = async (req, res) => {
         }
         user = new UserModel({ email, password: hashPass, firstname, lastname, country, dob, number});
         await user.save();
-        res.send("User registered");
+        return res.status(200).json({msg: "User Created Successfully"});
       });
     }
   } catch (error) {
@@ -43,42 +43,14 @@ exports.loginUser = async (req, res) => {
           const email = user[0].email;
           res.send({token, firstname, email});
         } else {
-          res.status(400).send("Invalid Credentials"); // 400 bad request
+          res.status(400).send("Invalid Credentials");
         }
       });
     } else {
-      res.status(400).send("Invalid Credentials"); // 400 bad request
+      res.status(400).send("Invalid Credentials");
     }
   } catch (error) {
-    res.status(500).send("Invalid Credentials"); //500 Internal error
+    res.status(500).send("Invalid Credentials");
     console.log(error);
   }
 };
-/*
-JWT 
-STEP 1. LOGIN -> Create -> (userID, jwt_secret) -> response -> token .. res.json({token})
-STEP 2. middleware(authenticator) -> (token, jwt_secret) -> response -> userID .. req.userID = data(userID)
-*/
-/*
-
-bcrypt
-STEP 1. REGISTER -> Create -> bcrypt(normalPassword, saltRount, cb(err, encoded_password))
-*  cb(err, encoded_password){
-*   if(err) res.send(error);
-*   const newUSer = new UserModel({name , email, dob, location, password: encoded_password})
-*  }
-STEP 2. Compare -> (normalPassword, encoded_password, cb(err, result))
-cb(err, result){
-  if(err) res.send(err)
-  if(result){
-   JWT token // password is true 
-  } else {
-    res.status(400).send('bad request)
-  }
-}
-*/
-/*
-FRONTEND -> BACKEND
-frontend (baseurl) = localhost:3500/
-
-*/

@@ -51,7 +51,8 @@ a{
     margin-bottom: 14%;
 }
 .material-symbols-outlined{
-    font-size: 19px;
+    font-size: 20px;
+    margin-top: -4%;
 }
 .blue{
     color: #0783f6;
@@ -80,4 +81,7 @@ a{
 #submit:hover{
     background-color: #2694fb;
 
+}
+.arrow{
+    font-size: 16px;
 }
