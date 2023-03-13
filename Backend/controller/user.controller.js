@@ -5,9 +5,9 @@ const bcrypt = require("bcrypt");
 const jwt_secret = process.env.JWT_SECRET;
 
 exports.registerUser = async (req, res) => {
-  const { email, password, firstname, lastname, country, dob, cpassword, number} = req.body;
+  const { email, password, firstname, lastname, country, dob, number} = req.body;
   try {
-    let user = new UserModel({ email });
+    let user = UserModel.find({ email });
     if (user.length) {
       return res.status(403).json({msg: "User Already Exists"});
     } else {

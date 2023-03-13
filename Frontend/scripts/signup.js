@@ -29,8 +29,9 @@ const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
       },
       body: JSON.stringify(data),
     });
+    console.log(res)
     if (res.ok) {
-      window.location.href = "./login.html";
+      // window.location.href = "./login.html";
     } else {
       alert("Invalid Credentials");
     }
