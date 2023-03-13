@@ -1,5 +1,5 @@
-// const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
-const baseUrl = 'http://localhost:3500';
+const baseUrl = 'https://ruby-vivacious-hare.cyclic.app';
+// const baseUrl = 'http://localhost:3500';
 
   let form = document.querySelector("form");
   form.addEventListener("submit", (e) => {

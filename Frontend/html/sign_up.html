@@ -27,9 +27,9 @@
       <a href="./product.html">TV & Home</a>
       <a href="./product.html">Only on Alpine</a>
       <a href="./product.html">Accessories</a>
-      <a href="./user_profile.html">Support</a>
-      <a href="./user_profile.html"><span class="material-symbols-outlined">person</span></a>
-      <a href="./cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      <a href="">Support</a>
+      <a><span class="material-symbols-outlined" id="person">person</span></a>
+      <a><i  id="cart" class="fa-solid fa-bag-shopping"></i></a>
     </div><div id="main_div_background"></div>
     <!-- !------------------------ NAVBAR ---------------------------- -->
 
@@ -142,7 +142,15 @@
             </div>
         </div>
     </div>
-    
-</body>
+    <div class="position-fixed bottom-0 end-0 m-3 p-1 toast align-items-center text-white bg-dark border-0" role="alert" aria-live="assertive" aria-atomic="true" style="z-index:11" id="alert_msg">
+      <div class="d-flex">
+        <div class="toast-body">
+         Access Denied! Please <a href="./login.html" class="text-info"><u><b>Login</b></u></a> or <a href="./sign_up.html" class="text-info"><u><b>Signup</b></u></a>
+        </div>
+        <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  </body>
 <script src="../scripts/signup.js"></script>
 </html>
