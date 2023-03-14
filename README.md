@@ -18,7 +18,7 @@ This project is deployed on netlify here - [alpine.com](https://alpine-ebrand.ne
 ### Pages & Features 👇
 
 - `Home Page`: Nav Bar, Mainpage, Advertisement carosel, Footer Section.
-- `Sign-Up`: User details are stored in MongoDB Atlas.
+- `Sign-Up`: User details are stored in MongoDB Atlas, shows a pop-up if email has already been used.
 - `Sign-In`: User authentication to check whether the user's email and password match with details existing in the database.
 - `Products Page`: You can check out the products and add them.
 - `User's Profile page`: Contains all the details of user only if the user has signed in.
